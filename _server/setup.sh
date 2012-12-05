@@ -60,7 +60,7 @@ else
     COMPOSER="php composer.phar"
 fi
 
-#$COMPOSER install --dev
+$COMPOSER install --dev
 
 set +x
 

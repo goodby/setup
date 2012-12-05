@@ -34,9 +34,14 @@ class Console implements ConsoleInterface
     {
         header('Content-type: text/plain; charset=utf-8');
         $this
-            ->_commentln("- - - - - - - - - - - - - - - - - - - - - - - - #")
-            ->_commentln("                setup.goodby.org                #")
-            ->_commentln("- - - - - - - - - - - - - - - - - - - - - - - - #")
+            ->_commentln("```````````````````````````````````````````````````````````````")
+            ->_commentln(" \"Goodbye Setup\" Shell Script")
+            ->_commentln("```````````````````````````````````````````````````````````````")
+            ->_commentln("  You can use this script via 'curl' command.")
+            ->_commentln("  See help with following command:")
+            ->_commentln("    $ curl setup.goodby.org | sh")
+            ->_commentln("")
+            ->_commentln("```````````````````````````````````````````````````````````````")
         ;
     }
 
