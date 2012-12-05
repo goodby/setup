@@ -1,0 +1,12 @@
+language: php
+php:
+  - 5.3
+  - 5.4
+
+before_script:
+  - ./scripts/bundle-devtools.sh .
+  - export VENDOR_NAME_PACKAGE_NAME_TEST_DB_HOST=127.0.0.1
+  - export VENDOR_NAME_PACKAGE_NAME_TEST_DB_USER=root
+  - export VENDOR_NAME_PACKAGE_NAME_TEST_DB_PASS=""
+  - mysql -e 'create database vendor_name_package_name_test'
+script: ./vendor/bin/phpunit --coverage-text --configuration phpunit.xml.dist
