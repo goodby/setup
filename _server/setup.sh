@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 vendorname="__vendor-name__"
 vendor_name="__vendor_name__"
 VENDOR_NAME="__VENDOR_NAME__"
