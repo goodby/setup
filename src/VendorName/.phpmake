@@ -1,0 +1,8 @@
+{
+        "namespace": null,
+        "namespace_separator": "\\",
+        "replace": {
+                "__test_case_class__": "\\PHPUnit_Framework_TestCase"
+        }
+}
+
