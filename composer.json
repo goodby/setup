@@ -2,7 +2,7 @@
     "name": "goodby/setup",
     "description": "",
     "keywords": [],
-    "homepage": "https://github.com/vendor-name/package-name",
+    "homepage": "https://github.com/goodby/setup",
     "license": "MIT",
     "require": {
         "php": ">=5.3.2"
