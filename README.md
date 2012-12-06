@@ -4,6 +4,12 @@
 
 Goodby Setup is powerful oneliner to support setting up GitHub repositories of PHP components.
 
+Do you spent some hours to setup your component's repository?
+
+Does the setup task annoy you?
+
+If you answer "yes", you may use Goody Setup oneliner to say "Goodbye" to your setup task! 
+
 ### Features
 
 #### 1. Easy to deploy
