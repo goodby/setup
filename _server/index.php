@@ -174,12 +174,12 @@ function show_help(ConsoleInterface $console)
 
 $console = new Console();
 
-if ( isset($_SERVER['PATH_INFO']) === false ) {
+if ( isset($_SERVER['REQUEST_URI']) === false ) {
     show_help($console);
     $console->quit();
 }
 
-$pathinfo = trim($_SERVER['PATH_INFO'], '/');
+$pathinfo = trim($_SERVER['REQUEST_URI'], '/');
 
 if ( ! preg_match('#^(?P<vendor_name>[^/]+)/(?P<package_name>[^/]+)$#', $pathinfo, $matches) ) {
     $console->writeln("Invalid request.");
