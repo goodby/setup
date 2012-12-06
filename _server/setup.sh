@@ -10,6 +10,9 @@ package_name="__package_name__"
 PACKAGE_NAME="__PACKAGE_NAME__"
 PackageName="__PackageName__"
 
+README_DIST="README.dist.md"
+README="README.md"
+
 # clone goodby/setup
 git clone git://github.com/goodby/setup.git "$vendorname/$packagename"
 cd "$vendorname/$packagename"
@@ -41,10 +44,13 @@ rm -rf .git
 
 # perform project's first commit
 git init
-git add README.md
+rm -f "${README}"
+touch "${README}"
+git add "${README}"
 git commit -m "first commit"
 
 # perform project's second commit
+mv "${README_DIST}" "${README}"
 git add -A
 git commit -m "set up project"
 
