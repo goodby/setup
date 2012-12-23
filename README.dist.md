@@ -45,15 +45,13 @@ editing...
 
 ## Contributing
 
-We works under test driven development.
-
 Checkout master source code from github:
 
 ```
 hub clone goodby/setup
 ```
 
-Install components via composer:
+Install develpment components via composer:
 
 ```
 # If you don't have composer.phar
@@ -63,12 +61,29 @@ Install components via composer:
 composer.phar install --dev
 ```
 
+### Unit Testing
+
+We works under test driven development.
+
 Run phpunit:
 
 ```
 ./vendor/bin/phpunit
 ```
 
+### Coding Standard
+
+We follows coding standard [PSR-2][].
+
+Check if your codes follows PSR-2 by phpcs:
+
+```
+./vendor/bin/phpcs --standard=PSR2 src/
+```
+
 ## Acknowledgement
 
 editing...
+
+
+[PSR-2]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
