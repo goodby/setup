@@ -13,6 +13,9 @@
         "suin/php-expose": ">=1.0",
         "squizlabs/php_codesniffer": "1.*"
     },
+    "config": {
+        "bin-dir": "bin"
+    },
     "autoload": {
         "psr-0": {
             "VendorName\\PackageName": "src/"
